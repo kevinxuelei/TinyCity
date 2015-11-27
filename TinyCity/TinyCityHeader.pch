@@ -1,0 +1,56 @@
+//
+//  TinyCityHeader.pch
+//  TinyCity
+//
+//  Created by lanou3g on 15/11/12.
+//  Copyright (c) 2015年 DH. All rights reserved.
+//
+#ifndef TinyCity_TinyCityHeader_pch
+#define TinyCity_TinyCityHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "UIView+Extension.h"
+#import <MJExtension.h>
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <AVOSCloud.h>
+#import <AVOSCloudIM.h>
+#import <CDChatManager.h>
+#import "DXAlertView.h"
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import "Colours.h"
+#import "AVImageUrl.h"
+
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define PLLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态, 关闭LOG功能
+#define PLLog(...)
+#endif
+
+// 随机色
+#define PLRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+#define URLs @"http://api.budejie.com/api/api_open.php?a=list&appname=baisishequ&asid=56280F3D-FFF0-4D6A-ABA9-C52F3D13282B&c=video&client=iphone&device=iPhone%204S&from=ios&jbk=0&mac=&market=&openudid=379ec5e20a2a6ca41a523ed24c985a847b0a580a&page=0&per=20&sub_flag=1&type=41&udid=&ver=3.6.1"
+#define KTabBarColor [UIColor colorWithRed:15 / 255.0f green:220 / 255.0f blue:255 / 255.0f alpha:1.0];
+
+#define APPKey @"56455368e0f55ae70500f04d"
+
+#define ID @"UbnohvEXv46NeCKApCJI1PKe"
+#define KEY @"htMDDHF5kcMrtbIsXB1p14yi"
+
+#define ViewWidth  self.view.frame.size.width
+#define ViewHeight  self.view.frame.size.height
+#define KHomeSavePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingString:@"/HomeSaveModelFile.txt"]
+
+// 微博信息
+#define KAppKey @"1460584414"
+#define kRedirectURI @"http://www.sina.com"
+#define KSecret @"923060308f1f75db36df47c720478d7d"
+
+#define KHotHeaderUrl @"http://v1.opencom.cn/sstuc?secret_key=8f39906e81a7f4ef2579d784b20050c2&action=app/app_main_img_post"
+#define kHotCellUrl @"http://v1.opencom.cn/sstuc?secret_key=8f39906e81a7f4ef2579d784b20050c2&action=lbbs/get_hots"
+
+#endif

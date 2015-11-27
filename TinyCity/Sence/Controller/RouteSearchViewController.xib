@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RouteSearchViewController">
+            <connections>
+                <outlet property="endAddress" destination="Cxi-Hi-fXA" id="hpW-WQ-hAx"/>
+                <outlet property="endCity" destination="2vh-pM-epj" id="0H2-Bz-SL3"/>
+                <outlet property="mapView" destination="2Dv-7q-b0P" id="5WG-YW-j7h"/>
+                <outlet property="startAddress" destination="eyW-ML-8v1" id="MEv-od-63a"/>
+                <outlet property="startCity" destination="fLN-q4-mTq" id="zFc-hw-qsa"/>
+                <outlet property="switchLocationBtn" destination="BPA-74-7f5" id="34C-eK-oZm"/>
+                <outlet property="view" destination="KxU-n7-Na7" id="Pqe-ig-zp4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KxU-n7-Na7">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="552"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="出发城市" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-q4-mTq">
+                    <rect key="frame" x="61" y="115" width="65" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="imM-sX-vG7"/>
+                        <constraint firstAttribute="width" constant="65" id="jk8-8E-9wB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="出发地点" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyW-ML-8v1">
+                    <rect key="frame" x="131" y="115" width="150" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="AZ8-7S-64I"/>
+                        <constraint firstAttribute="height" constant="30" id="gpp-6g-BFT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="到达城市" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2vh-pM-epj">
+                    <rect key="frame" x="61" y="155" width="65" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="CLs-Q6-cfX"/>
+                        <constraint firstAttribute="height" constant="30" id="Fk3-eA-o4E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="到达地点" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cxi-Hi-fXA">
+                    <rect key="frame" x="131" y="155" width="150" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="IWH-3r-tW5"/>
+                        <constraint firstAttribute="height" constant="30" id="UjN-YN-eOS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-Up-x7q">
+                    <rect key="frame" x="113" y="74" width="113" height="31"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="ruX-ds-dpz"/>
+                    </constraints>
+                    <state key="normal" title="驾乘" backgroundImage="back0-1">
+                        <color key="titleColor" red="1" green="0.60630349490000002" blue="0.40143733840000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="iconfont-zijiayou-selected.png"/>
+                    <state key="highlighted" image="iconfont-zijiayou-selected.png"/>
+                    <connections>
+                        <action selector="drive:" destination="-1" eventType="touchUpInside" id="Qoo-xY-DvL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="起点：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Q-lW-mNM">
+                    <rect key="frame" x="5" y="119" width="51" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="51" id="8cN-Jp-Coi"/>
+                        <constraint firstAttribute="height" constant="21" id="hQB-mX-Ieo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="终点：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKT-02-PEe">
+                    <rect key="frame" x="5" y="160" width="51" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="51" id="Qdd-Wg-hRO"/>
+                        <constraint firstAttribute="height" constant="21" id="t1K-OF-FJK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPA-74-7f5">
+                    <rect key="frame" x="299" y="134" width="31" height="31"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="NJ2-Q2-dpi"/>
+                        <constraint firstAttribute="width" constant="31" id="RBl-rS-kda"/>
+                    </constraints>
+                    <state key="normal" title="切换" image="iconfont-qiehuan.png"/>
+                    <state key="highlighted" image="iconfont-qiehuan-selected.png"/>
+                    <connections>
+                        <action selector="switchLocationAction:" destination="-1" eventType="touchUpInside" id="I6Q-2w-oek"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dv-7q-b0P" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="195" width="340" height="357"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfH-fT-gF1">
+                    <rect key="frame" x="0.0" y="74" width="113" height="31"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="Zpa-jA-Xw4"/>
+                    </constraints>
+                    <state key="normal" title="公交" backgroundImage="back0-1">
+                        <color key="titleColor" red="1" green="0.55883683910000004" blue="0.375384673" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="iconfont-gongjiaochaxun-selected.png"/>
+                    <state key="highlighted" image="iconfont-gongjiaochaxun-selected.png"/>
+                    <connections>
+                        <action selector="busWay:" destination="-1" eventType="touchUpInside" id="ZPw-kx-DQn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL6-dE-CF3">
+                    <rect key="frame" x="226" y="74" width="113" height="31"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="U5d-2i-x2i"/>
+                    </constraints>
+                    <state key="normal" title="步行" backgroundImage="back0-1">
+                        <color key="titleColor" red="1" green="0.51666255480000001" blue="0.18911263170000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="iconfont-xingren-selected.png"/>
+                    <state key="highlighted" image="iconfont-xingren-selected.png"/>
+                    <connections>
+                        <action selector="walkWay:" destination="-1" eventType="touchUpInside" id="2Rt-pl-aGd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Cxi-Hi-fXA" firstAttribute="leading" secondItem="2vh-pM-epj" secondAttribute="trailing" constant="5" id="0Wp-MG-BLk"/>
+                <constraint firstItem="2vh-pM-epj" firstAttribute="top" secondItem="fLN-q4-mTq" secondAttribute="bottom" constant="10" id="2W2-2z-R4J"/>
+                <constraint firstItem="dL6-dE-CF3" firstAttribute="top" secondItem="KxU-n7-Na7" secondAttribute="top" constant="74" id="8C0-pL-8nn"/>
+                <constraint firstItem="Y4Q-lW-mNM" firstAttribute="top" secondItem="FfH-fT-gF1" secondAttribute="bottom" constant="14" id="8pb-Ju-WB2"/>
+                <constraint firstItem="2Dv-7q-b0P" firstAttribute="leading" secondItem="KxU-n7-Na7" secondAttribute="leading" id="AFk-tu-yPj"/>
+                <constraint firstItem="fLN-q4-mTq" firstAttribute="leading" secondItem="Y4Q-lW-mNM" secondAttribute="trailing" constant="5" id="AbX-Ys-jLz"/>
+                <constraint firstItem="FfH-fT-gF1" firstAttribute="width" secondItem="KxU-n7-Na7" secondAttribute="width" multiplier="1:3" id="Al1-Jo-12w"/>
+                <constraint firstAttribute="trailing" secondItem="2Dv-7q-b0P" secondAttribute="trailing" id="Bbn-tW-LfO"/>
+                <constraint firstItem="pKT-02-PEe" firstAttribute="top" secondItem="Y4Q-lW-mNM" secondAttribute="bottom" constant="20" id="EHh-aT-ddn"/>
+                <constraint firstItem="Y4Q-lW-mNM" firstAttribute="leading" secondItem="KxU-n7-Na7" secondAttribute="leading" constant="5" id="FLE-i4-Vw1"/>
+                <constraint firstItem="fLN-q4-mTq" firstAttribute="top" secondItem="FfH-fT-gF1" secondAttribute="bottom" constant="10" id="GAE-zz-GMX"/>
+                <constraint firstAttribute="trailing" secondItem="BPA-74-7f5" secondAttribute="trailing" constant="10" id="GCu-2Q-fSf"/>
+                <constraint firstItem="vC8-Up-x7q" firstAttribute="top" secondItem="KxU-n7-Na7" secondAttribute="top" constant="74" id="IVE-8C-ViQ"/>
+                <constraint firstItem="eyW-ML-8v1" firstAttribute="top" secondItem="dL6-dE-CF3" secondAttribute="bottom" constant="10" id="KHJ-5e-2XL"/>
+                <constraint firstItem="dL6-dE-CF3" firstAttribute="width" secondItem="vC8-Up-x7q" secondAttribute="width" id="UYf-lf-MN3"/>
+                <constraint firstItem="vC8-Up-x7q" firstAttribute="width" secondItem="FfH-fT-gF1" secondAttribute="width" id="VtS-Lx-ZFR"/>
+                <constraint firstItem="pKT-02-PEe" firstAttribute="leading" secondItem="KxU-n7-Na7" secondAttribute="leading" constant="5" id="Yyt-Bk-MX7"/>
+                <constraint firstItem="Cxi-Hi-fXA" firstAttribute="top" secondItem="eyW-ML-8v1" secondAttribute="bottom" constant="10" id="emO-1o-h11"/>
+                <constraint firstItem="BPA-74-7f5" firstAttribute="top" secondItem="dL6-dE-CF3" secondAttribute="bottom" constant="29" id="fTG-ps-Nqt"/>
+                <constraint firstItem="FfH-fT-gF1" firstAttribute="top" secondItem="KxU-n7-Na7" secondAttribute="top" constant="74" id="g36-f2-4Wm"/>
+                <constraint firstItem="eyW-ML-8v1" firstAttribute="leading" secondItem="fLN-q4-mTq" secondAttribute="trailing" constant="5" id="kdl-ph-U9B"/>
+                <constraint firstItem="FfH-fT-gF1" firstAttribute="leading" secondItem="KxU-n7-Na7" secondAttribute="leading" id="lE3-Ec-yiB"/>
+                <constraint firstItem="2Dv-7q-b0P" firstAttribute="top" secondItem="Cxi-Hi-fXA" secondAttribute="bottom" constant="10" id="ll7-8k-PNr"/>
+                <constraint firstItem="2vh-pM-epj" firstAttribute="leading" secondItem="pKT-02-PEe" secondAttribute="trailing" constant="5" id="mkO-xh-rkd"/>
+                <constraint firstItem="vC8-Up-x7q" firstAttribute="leading" secondItem="FfH-fT-gF1" secondAttribute="trailing" id="rQo-rm-Nd4"/>
+                <constraint firstAttribute="bottom" secondItem="2Dv-7q-b0P" secondAttribute="bottom" id="wD3-zG-auT"/>
+                <constraint firstItem="dL6-dE-CF3" firstAttribute="leading" secondItem="vC8-Up-x7q" secondAttribute="trailing" id="y9C-gf-QuV"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="413" y="427"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back0-1" width="375" height="120"/>
+        <image name="iconfont-gongjiaochaxun-selected.png" width="32" height="32"/>
+        <image name="iconfont-qiehuan-selected.png" width="32" height="32"/>
+        <image name="iconfont-qiehuan.png" width="32" height="32"/>
+        <image name="iconfont-xingren-selected.png" width="32" height="32"/>
+        <image name="iconfont-zijiayou-selected.png" width="32" height="32"/>
+    </resources>
+</document>

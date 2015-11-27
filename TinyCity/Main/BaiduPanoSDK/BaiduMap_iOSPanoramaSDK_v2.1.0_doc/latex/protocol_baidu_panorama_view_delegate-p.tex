@@ -1,0 +1,82 @@
+\hypertarget{protocol_baidu_panorama_view_delegate-p}{}\section{$<$Baidu\+Panorama\+View\+Delegate$>$ Protocol Reference}
+\label{protocol_baidu_panorama_view_delegate-p}\index{$<$\+Baidu\+Panorama\+View\+Delegate$>$@{$<$\+Baidu\+Panorama\+View\+Delegate$>$}}
+Inheritance diagram for $<$Baidu\+Panorama\+View\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_baidu_panorama_view_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_baidu_panorama_view_delegate-p_a03539810d751c9ba222b787f77220634}{panorama\+Will\+Load\+:}
+\item 
+(void) -\/ \hyperlink{protocol_baidu_panorama_view_delegate-p_a24f54de59de8a2cdb3ee4671c1f79d73}{panorama\+Did\+Load\+:descreption\+:}
+\item 
+(void) -\/ \hyperlink{protocol_baidu_panorama_view_delegate-p_a4078254b3540500fc14b2f718ede1142}{panorama\+Load\+Failed\+:error\+:}
+\item 
+(void) -\/ \hyperlink{protocol_baidu_panorama_view_delegate-p_af45938530cd3b0e4c0309785c339af17}{panorama\+View\+:overlay\+Clicked\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_baidu_panorama_view_delegate-p_a24f54de59de8a2cdb3ee4671c1f79d73}{}\index{Baidu\+Panorama\+View\+Delegate-\/p@{Baidu\+Panorama\+View\+Delegate-\/p}!panorama\+Did\+Load\+:descreption\+:@{panorama\+Did\+Load\+:descreption\+:}}
+\index{panorama\+Did\+Load\+:descreption\+:@{panorama\+Did\+Load\+:descreption\+:}!Baidu\+Panorama\+View\+Delegate-\/p@{Baidu\+Panorama\+View\+Delegate-\/p}}
+\subsubsection[{panorama\+Did\+Load\+:descreption\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) panorama\+Did\+Load\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf Baidu\+Panorama\+View} $\ast$)}]{panorama\+View}
+\item[{descreption:(N\+S\+String $\ast$)}]{json\+Str}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_baidu_panorama_view_delegate-p_a24f54de59de8a2cdb3ee4671c1f79d73}
+全景图加载完毕 
+\begin{DoxyParams}{Parameters}
+{\em panorama\+View} & 当前全景视图 \\
+\hline
+{\em json\+Str} & 全景单点信息 \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_baidu_panorama_view_delegate-p_a4078254b3540500fc14b2f718ede1142}{}\index{Baidu\+Panorama\+View\+Delegate-\/p@{Baidu\+Panorama\+View\+Delegate-\/p}!panorama\+Load\+Failed\+:error\+:@{panorama\+Load\+Failed\+:error\+:}}
+\index{panorama\+Load\+Failed\+:error\+:@{panorama\+Load\+Failed\+:error\+:}!Baidu\+Panorama\+View\+Delegate-\/p@{Baidu\+Panorama\+View\+Delegate-\/p}}
+\subsubsection[{panorama\+Load\+Failed\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) panorama\+Load\+Failed\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf Baidu\+Panorama\+View} $\ast$)}]{panorama\+View}
+\item[{error:(N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_baidu_panorama_view_delegate-p_a4078254b3540500fc14b2f718ede1142}
+全景图加载失败 
+\begin{DoxyParams}{Parameters}
+{\em panorama\+View} & 当前全景视图 \\
+\hline
+{\em error} & 加载失败的返回信息 \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_baidu_panorama_view_delegate-p_af45938530cd3b0e4c0309785c339af17}{}\index{Baidu\+Panorama\+View\+Delegate-\/p@{Baidu\+Panorama\+View\+Delegate-\/p}!panorama\+View\+:overlay\+Clicked\+:@{panorama\+View\+:overlay\+Clicked\+:}}
+\index{panorama\+View\+:overlay\+Clicked\+:@{panorama\+View\+:overlay\+Clicked\+:}!Baidu\+Panorama\+View\+Delegate-\/p@{Baidu\+Panorama\+View\+Delegate-\/p}}
+\subsubsection[{panorama\+View\+:overlay\+Clicked\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) panorama\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf Baidu\+Panorama\+View} $\ast$)}]{panorama\+View}
+\item[{overlayClicked:(N\+S\+String $\ast$)}]{overlay\+Id}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_baidu_panorama_view_delegate-p_af45938530cd3b0e4c0309785c339af17}
+全景图中的覆盖物点击事件 
+\begin{DoxyParams}{Parameters}
+{\em overlay\+Id} & 覆盖物标识 \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_baidu_panorama_view_delegate-p_a03539810d751c9ba222b787f77220634}{}\index{Baidu\+Panorama\+View\+Delegate-\/p@{Baidu\+Panorama\+View\+Delegate-\/p}!panorama\+Will\+Load\+:@{panorama\+Will\+Load\+:}}
+\index{panorama\+Will\+Load\+:@{panorama\+Will\+Load\+:}!Baidu\+Panorama\+View\+Delegate-\/p@{Baidu\+Panorama\+View\+Delegate-\/p}}
+\subsubsection[{panorama\+Will\+Load\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) panorama\+Will\+Load\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf Baidu\+Panorama\+View} $\ast$)}]{panorama\+View}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_baidu_panorama_view_delegate-p_a03539810d751c9ba222b787f77220634}
+全景图将要加载 
+\begin{DoxyParams}{Parameters}
+{\em panorama\+View} & 当前全景视图 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Baidu\+Panorama\+View.\+h\end{DoxyCompactItemize}

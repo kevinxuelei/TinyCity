@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E667EA26-91C0-4440-9B0D-001766BA4AB9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TinyCity</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7a8e9288-35c2-4186-bcea-87e8460bc367</key>
+		<string>http://www.svnchina.com/svn/tinycity</string>
+		<key>d6d515c0-b286-456e-921a-fd3f6005fcd6</key>
+		<string>http://svnchina.com/svn/group08</string>
+		<key>e8c77662-7476-4f35-bbcf-5eeba5d5dc93</key>
+		<string>http://svnchina.com/svn/city</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TinyCity/TinyCity.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7a8e9288-35c2-4186-bcea-87e8460bc367</key>
+		<string>../../../tinycity</string>
+		<key>d6d515c0-b286-456e-921a-fd3f6005fcd6</key>
+		<string>../../../group08</string>
+		<key>e8c77662-7476-4f35-bbcf-5eeba5d5dc93</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>e8c77662-7476-4f35-bbcf-5eeba5d5dc93</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>e8c77662-7476-4f35-bbcf-5eeba5d5dc93</string>
+			<key>IDESourceControlWCCName</key>
+			<string>city</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>d6d515c0-b286-456e-921a-fd3f6005fcd6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>group08</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7a8e9288-35c2-4186-bcea-87e8460bc367</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tinycity</string>
+		</dict>
+	</array>
+</dict>
+</plist>

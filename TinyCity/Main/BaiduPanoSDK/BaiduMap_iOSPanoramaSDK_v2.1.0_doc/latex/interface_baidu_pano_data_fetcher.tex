@@ -1,0 +1,97 @@
+\hypertarget{interface_baidu_pano_data_fetcher}{}\section{Baidu\+Pano\+Data\+Fetcher Class Reference}
+\label{interface_baidu_pano_data_fetcher}\index{Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}}
+Inheritance diagram for Baidu\+Pano\+Data\+Fetcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_baidu_pano_data_fetcher}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_baidu_pano_data_fetcher_a984af94df4bdd13ecc4bf1bf2d7c9af9}{request\+Panorama\+Indoor\+Data\+With\+Iid\+:}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_baidu_pano_data_fetcher_a4df72f7368ecbeed658fbc0848ee0036}{request\+Panorama\+Recommendation\+Service\+Data\+With\+Pid\+:}
+\item 
+(\hyperlink{interface_baidu_poi_pano_data}{Baidu\+Poi\+Pano\+Data} $\ast$) + \hyperlink{interface_baidu_pano_data_fetcher_a24973faff16b705c6f5be43233af3550}{request\+Panorama\+Info\+With\+Uid\+:}
+\item 
+(\hyperlink{interface_baidu_location_pano_data}{Baidu\+Location\+Pano\+Data} $\ast$) + \hyperlink{interface_baidu_pano_data_fetcher_a399cac6672a5acc2571c751c8f6886a9}{request\+Panorama\+Info\+With\+X\+:\+Y\+:}
+\item 
+(\hyperlink{interface_baidu_location_pano_data}{Baidu\+Location\+Pano\+Data} $\ast$) + \hyperlink{interface_baidu_pano_data_fetcher_a13ba4cab3f69d9cd79aaad3ff0b81ec7}{request\+Panorama\+Info\+With\+Lon\+:\+Lat\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_baidu_pano_data_fetcher_a984af94df4bdd13ecc4bf1bf2d7c9af9}{}\index{Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}!request\+Panorama\+Indoor\+Data\+With\+Iid\+:@{request\+Panorama\+Indoor\+Data\+With\+Iid\+:}}
+\index{request\+Panorama\+Indoor\+Data\+With\+Iid\+:@{request\+Panorama\+Indoor\+Data\+With\+Iid\+:}!Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}}
+\subsubsection[{request\+Panorama\+Indoor\+Data\+With\+Iid\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) request\+Panorama\+Indoor\+Data\+With\+Iid\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{iid}
+\end{DoxyParamCaption}
+}\label{interface_baidu_pano_data_fetcher_a984af94df4bdd13ecc4bf1bf2d7c9af9}
+获取室内全景描述信息,其中包含室内相册相关信息，需要开发者自己解析 
+\begin{DoxyParams}{Parameters}
+{\em iid} & 室内信息的唯一\+I\+D，可以通过\+P\+O\+I查询获取到 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_baidu_pano_data_fetcher_a13ba4cab3f69d9cd79aaad3ff0b81ec7}{}\index{Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}!request\+Panorama\+Info\+With\+Lon\+:\+Lat\+:@{request\+Panorama\+Info\+With\+Lon\+:\+Lat\+:}}
+\index{request\+Panorama\+Info\+With\+Lon\+:\+Lat\+:@{request\+Panorama\+Info\+With\+Lon\+:\+Lat\+:}!Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}}
+\subsubsection[{request\+Panorama\+Info\+With\+Lon\+:\+Lat\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Baidu\+Location\+Pano\+Data} $\ast$) request\+Panorama\+Info\+With\+Lon\+: 
+\begin{DoxyParamCaption}
+\item[{(double)}]{lon}
+\item[{Lat:(double)}]{lat}
+\end{DoxyParamCaption}
+}\label{interface_baidu_pano_data_fetcher_a13ba4cab3f69d9cd79aaad3ff0b81ec7}
+通过经纬度获取经纬度下全景相关信息，例如pid，全景类型等 
+\begin{DoxyParams}{Parameters}
+{\em pid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json string 
+\end{DoxyReturn}
+\hypertarget{interface_baidu_pano_data_fetcher_a24973faff16b705c6f5be43233af3550}{}\index{Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}!request\+Panorama\+Info\+With\+Uid\+:@{request\+Panorama\+Info\+With\+Uid\+:}}
+\index{request\+Panorama\+Info\+With\+Uid\+:@{request\+Panorama\+Info\+With\+Uid\+:}!Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}}
+\subsubsection[{request\+Panorama\+Info\+With\+Uid\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Baidu\+Poi\+Pano\+Data} $\ast$) request\+Panorama\+Info\+With\+Uid\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{uid}
+\end{DoxyParamCaption}
+}\label{interface_baidu_pano_data_fetcher_a24973faff16b705c6f5be43233af3550}
+通过uid获取该poi下的全景描述信息，以此来判断此\+U\+I\+D下是否有全景 
+\begin{DoxyParams}{Parameters}
+{\em pid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json string 
+\end{DoxyReturn}
+\hypertarget{interface_baidu_pano_data_fetcher_a399cac6672a5acc2571c751c8f6886a9}{}\index{Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}!request\+Panorama\+Info\+With\+X\+:\+Y\+:@{request\+Panorama\+Info\+With\+X\+:\+Y\+:}}
+\index{request\+Panorama\+Info\+With\+X\+:\+Y\+:@{request\+Panorama\+Info\+With\+X\+:\+Y\+:}!Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}}
+\subsubsection[{request\+Panorama\+Info\+With\+X\+:\+Y\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Baidu\+Location\+Pano\+Data} $\ast$) request\+Panorama\+Info\+With\+X\+: 
+\begin{DoxyParamCaption}
+\item[{(double)}]{x}
+\item[{Y:(double)}]{y}
+\end{DoxyParamCaption}
+}\label{interface_baidu_pano_data_fetcher_a399cac6672a5acc2571c751c8f6886a9}
+通过墨卡托坐标获取坐标下全景的相关信息。 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_baidu_pano_data_fetcher_a4df72f7368ecbeed658fbc0848ee0036}{}\index{Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}!request\+Panorama\+Recommendation\+Service\+Data\+With\+Pid\+:@{request\+Panorama\+Recommendation\+Service\+Data\+With\+Pid\+:}}
+\index{request\+Panorama\+Recommendation\+Service\+Data\+With\+Pid\+:@{request\+Panorama\+Recommendation\+Service\+Data\+With\+Pid\+:}!Baidu\+Pano\+Data\+Fetcher@{Baidu\+Pano\+Data\+Fetcher}}
+\subsubsection[{request\+Panorama\+Recommendation\+Service\+Data\+With\+Pid\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) request\+Panorama\+Recommendation\+Service\+Data\+With\+Pid\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{pid}
+\end{DoxyParamCaption}
+}\label{interface_baidu_pano_data_fetcher_a4df72f7368ecbeed658fbc0848ee0036}
+获取某一个pid下对应的周边推荐信息 
+\begin{DoxyParams}{Parameters}
+{\em pid} & 全景pid \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Baidu\+Pano\+Data\+Fetcher.\+h\end{DoxyCompactItemize}

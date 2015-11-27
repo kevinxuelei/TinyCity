@@ -1,0 +1,53 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7183192D6F4B91908865359D171B9232AEBD0B8C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2e7f625a-e8c3-42db-814b-8787cf596465++3161" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7183192D6F4B91908865359D171B9232AEBD0B8C" : 0,
+    "e8c77662-7476-4f35-bbcf-5eeba5d5dc93" : 0,
+    "2e7f625a-e8c3-42db-814b-8787cf596465++3161" : 0,
+    "d6d515c0-b286-456e-921a-fd3f6005fcd6" : 0,
+    "F12BD647C9B9DABCD19434A6C6EE9D3D22ECFB34" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E667EA26-91C0-4440-9B0D-001766BA4AB9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7183192D6F4B91908865359D171B9232AEBD0B8C" : "Tiny\/",
+    "e8c77662-7476-4f35-bbcf-5eeba5d5dc93" : "city",
+    "2e7f625a-e8c3-42db-814b-8787cf596465++3161" : "Tiny\/TinyCity\/TinyCity\/Main\/ThirdParties\/Classes\/",
+    "d6d515c0-b286-456e-921a-fd3f6005fcd6" : "group08",
+    "F12BD647C9B9DABCD19434A6C6EE9D3D22ECFB34" : "tinycity"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TinyCity",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TinyCity\/TinyCity.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/www.svnchina.com\/svn\/ganliao",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2e7f625a-e8c3-42db-814b-8787cf596465++3161"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:group0801\/Tiny.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7183192D6F4B91908865359D171B9232AEBD0B8C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/www.svnchina.com\/svn\/tinycity",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F12BD647C9B9DABCD19434A6C6EE9D3D22ECFB34"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svnchina.com\/svn\/group08",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d6d515c0-b286-456e-921a-fd3f6005fcd6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svnchina.com\/svn\/city",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "e8c77662-7476-4f35-bbcf-5eeba5d5dc93"
+    }
+  ]
+}
